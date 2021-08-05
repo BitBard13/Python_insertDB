@@ -5,7 +5,7 @@ import random
 import pymysql
 import re
 conn = pymysql.connect(host='127.0.0.1', unix_socket='/var/run/mysqld/mysqld.sock',
-                        user='root', passwd=None, db='scraping', charset='utf8')
+                        user='root', passwd='danang', db='scraping', charset='utf8')
 cur = conn.cursor()
 cur.execute("USE scraping")
 random.seed(datetime.datetime.now())
