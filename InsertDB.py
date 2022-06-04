@@ -13,6 +13,8 @@ def store(question):
         cur.execute('INSERT INTO question (questtion) VALUES '
                 '("%s")', (question))
         cur.connection.commit()
+
+        # sdfsdfsdfsdfsdf
 def getLinks():
         html = urlopen('https://stackoverflow.com/questions')
         bs = BeautifulSoup(html, 'html.parser')
