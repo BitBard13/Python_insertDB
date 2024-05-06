@@ -14,7 +14,6 @@ def store(question):
                 '("%s")', (question))
         cur.connection.commit()
 
-#s2222222222222
 def getLinks():
         html = urlopen('https://stackoverflow.com/questions')
         bs = BeautifulSoup(html, 'html.parser')
